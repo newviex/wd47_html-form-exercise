@@ -22,6 +22,7 @@ form{
     max-width: 500px;
     min-width: 300px;
     width: 60vw;
+    padding-bottom: 2em;
 }
 fieldset{
     border: none;
@@ -37,8 +38,38 @@ label{
     /* background-color: #68e342; */
     margin: 0.5rem 0;
 }
+
+input,textarea,select{
+    width: 100%;
+    margin: 10px 0 0;
+    min-height: 2em; 
+}
+input,textarea{
+    /* background-color: rgba(0, 255, 179, 0.503); */
+    border: 1px solid rgba(101, 153, 138, 0.245);
+    color: #00000092;
+}
+
+.inline{
+    width: unset;
+    margin: 0 0.5em 0;
+    vertical-align: middle;
+}
+
 textarea{
     color: rgb(0, 255, 179);
 }
+
+input[type="submit"]{
+    display: block;
+    width:60%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+/* input[type="password"]{
+    background-color: blanchedalmond;
+} */
 
 /******* End of Forms Stylings *******/
