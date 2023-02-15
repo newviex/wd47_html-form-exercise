@@ -3,7 +3,7 @@ body{
     height: 100vh;
     margin: 0;
     background-color: #E3DFFD;
-    color: #212121;
+    color: #000;
 }
 label{
     display: inline-block;
