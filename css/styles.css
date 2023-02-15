@@ -10,3 +10,6 @@ label{
     /* background-color: #68e342; */
     margin: 0.5rem 0;
 }
+textarea{
+    color: green;
+}
