@@ -10,7 +10,7 @@
 <body>
     <!-- ******************** TITLE OF THE FORM ********************-->
     <h1>Registration Form</h1>
-
+    <p>Please fillout this information with the required information</p>
     <!-- ******************** FORM ********************-->
     
     <form action="#">
@@ -18,10 +18,10 @@
     <!-- Fieldset 1 First Name, Last Name , Password fields -->
         
     <fieldset>
-        <label for="#">Enter your First Name: <input type="text" required></label>
-        <label for="#">Enter your Last Name:<input type="text" required></label>
-        <label for="#">Enter your Email: <input type="email" required></label>
-        <label for="#">Enter your Password: <input type="password" minlength="8" pattern="[a-z0-5{8}]" required></label>
+        <label for="#">Enter your First Name: <input type="text" name="firstName" required></label>
+        <label for="#">Enter your Last Name:<input type="text" name="lastName" required></label>
+        <label for="#">Enter your Email: <input type="email"  name="email" required></label>
+        <label for="#">Enter your Password: <input type="password" name="password" minlength="8" pattern="[a-z0-5{8}]" required></label>
     </fieldset>
     
     <!-- Fieldset 2 -->
@@ -35,22 +35,22 @@
     <!-- Fieldset 3 -->
 
     <fieldset>
-        <label for="">Upload a profile picture: <input type="file"></label>
-        <label for="">Input your age(years): <input type="number" min="13" max="120"></label>
+        <label for="">Upload a profile picture: <input type="file" name="fileUpload"></label>
+        <label for="">Input your age(years): <input type="number" name="age" min="13" max="120"></label>
         
         <label for="">
             How did your hear from us?
-            <select name="" id="">
+            <select name="referrer" id="">
                 <option value="">(select one)</option>
-                <option value="1">News</option>
-                <option value="2">Blog</option>
-                <option value="3">Forums</option>
-                <option value="4">Others</option>
+                <option value="1" name="news">News</option>
+                <option value="2" name="blogs">Blog</option>
+                <option value="3" name="forums">Forums</option>
+                <option value="4" name="others">Others</option>
             </select>
         </label>
       <label for="#">
         Provide a bio:
-        <textarea name="" id="" cols="30" rows="3" placeholder="I like coding in a rainy day . . .  ">
+        <textarea name=" bio" id="" cols="30" rows="3" placeholder="I like coding in a rainy day . . .  ">
 
         </textarea>
       </label>
